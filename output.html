@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE, NO-STORE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META NAME="verify-v1" CONTENT="M5q4CxMVJyf1WE5UwVmHfV8q3LK1vh/3qmo894V0Pqg=" >
+<META NAME= "robots" CONTENT = "NOARCHIVE, NOFOLLOW, NOINDEX">
+<META NAME="description" CONTENT="Elsevier’s Scopus, the largest abstract and citation database of peer-reviewed literature. Search and access research from the science, technology, medicine, social sciences and arts and humanities fields.">
+<META NAME="referrer" CONTENT="unsafe-url">
+<script>/*13012016*/(function() {var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');var scriptTag = document.createElement('script');scriptTag.type = 'text/javascript';scriptTag.async = true;scriptTag.src = protocol + 'cdn.optimizely.com/js/277918141.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(scriptTag, s);})();function optimizelyTimeout() {window.optimizely = window.optimizely|| [];if (!window.optimizely.data) {window.optimizely.push("timeout");}}setTimeout(optimizelyTimeout, 1000);</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><style type="text/css">
+.jsEnabled {display:none !important;}
+</style>
+<link rel="SHORTCUT ICON" href="/static/images/favicon.ico?ver=1.0">
+<link rel="stylesheet" type="text/css" media="all" href="/gzip_N920030088/bundles/AuthorDetails.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/gzip_N595045713/bundles/ScopusLayout.css" />
+<script type="text/javascript" src="https://acw.elsevier.com/SSOCore/jawr_loader.js"></script>
+<script type="text/javascript" src="/gzip_N92088051/bundles/jquery.js" ></script>
+<script>
+if(!window.JAWR){
+jQuery(document).ready(function(){
+jQuery('#headerWrapper .CARS_panelClass #login_pop_container').css('margin-top','100px');
+var errorMsgObj = "<div id='errorMsgContainer'><span id='ariaHidden' class='hidden-label'>Alert Error message.</span><span>Scopus couldn&#39;t be completely loaded. Please check your browser, firewall or proxy configuration as explained on this <a target='_blank' title='View Scopus help files (opens in a new window)' href='http://help.elsevier.com/app/answers/detail/a_id/2848/p/8150'>help page</a>.</span></div>";
+jQuery("header").append(errorMsgObj);
+});
+}
+</script>
+<script type="text/javascript">
+JAWR.loader.script('/bundles/jcars.js');
+JAWR.loader.style('/bundles/jcars.css', 'all');
+</script>
+<script language="javascript" type="text/javascript">
+window.$ = window.jQuery;
+</script>
+<script type="text/javascript" src="/gzip_N1606155294/bundles/remoteAccMsg.js" ></script>
+<script>
+var feMetricUrl = new Object();
+feMetricUrl = "https://els-eum.elsst.com";
+</script>
+<script type="text/javascript" src="/gzip_1775072450/bundles/AuthorProfileTop.js" ></script>
+<script language="javascript" type="text/javascript">
+var MendeleybookmarkletUrl = 'https://www.mendeley.com/minified/bookmarklet.js';
+writeJavaScriptCookie();
+var isPreviewPage = false;
+</script>
+<title>
+Scopus - Author details (Shah OP, Bruno M.)
+</title>
+<script type="text/javascript" src="/gzip_421834148/bundles/SiteCatalystTop.js" ></script>
+<script type="text/javascript">
+var pageData = {
+page: {},
+visitor: {}
+};
+pageDataUtil.loadPageDataObject("false","222.205.18.97","en_US","","1553337","(1553337,U|75809,D|378034,A|181549,S|5,P|1,PL)(SCOPUS,CON|05e6-484e4a1ca51f951bf1724dd5d7996582359,SSO|ANON_IP,ACCESS_TYPE)",
+"ONLINE_REGISTERED","378034","181549", "The First Affiliated Hospital");
+</script>
+<script src="//assets.adobedtm.com/376c5346e33126fdb6b2dbac81e307cbacfd7935/satelliteLib-c74074f9c1cbd68a79f7ff7103e0cdc14b7e5f41.js
+"></script>
+</head>
+<body onLoad="onBodyLoad();">
+<div id="outerWrapper">
+<header>
+<div id="headerWrapper">
+<div class="skip-links">
+<a href="#skip1" title="Skip Main Navigation Links" >
+Skip Main Navigation Links
+</a>
+<a href="#skiptofooter" title="Jump to Footer">
+Jump to Footer
+</a>
+</div>
+<div id="overlay_screen" class="displayNone posAbsolute width100" onclick="overlayOutside();">&nbsp;</div>
+<div id="overlay_screen_lefttop" class="displayNone posAbsolute" onclick="overlayOutside();">&nbsp;</div>
+<div id="overlay_screen_leftbot" class="displayNone posAbsolute" onclick="overlayOutside();">&nbsp;</div>
+<div id="navigatorOverlay">&nbsp;</div>
+<div id="cib_Div_Overlay">
+<div id="cib_Overlay">
+<span id="cib_leftImg" title="">&nbsp;</span>
+<span id="cib_rightImg" title="">&nbsp;</span>
+<div class="contentMain"><div class="contentShadow"><div class="contentBorders">
+<div class="cib_Container">
+<div class="cib_Variable">
+<div class="floatL affColumn">
+<div class="txtSmaller variableRow">
+</div>
+<div class="cib_Header">
+</div>
+</div>
+<div class="floatR closeColumn" id="cibClose">
+<a href="#" 
+title='Close preview' >
+</a><span title='Close preview'
+class="pointer cibCloseButton">&nbsp;</span>	
+</div>
+<div class="clearB"></div>
+</div>
+<div class="cib_List">
+<div class="cibresultRow">
+</div>
+</div>
+<div class="cib_Footer">
+</div>
+</div>
+</div></div></div>
+</div>
+</div>
+<a name="top" id="top"></a>
+<input type="hidden" id="txGid" value="1418118A832A00F2423FC63714D48783.wsnAw8kcdt7IPYLO0V48gA:354"/>
+<div id="header" class="zoomFix" title="Main Page Header">
+<script>var prs = {rt: function(label,ts) { this[label]=(ts||ts==0?ts:new Date().getTime());}};	</script>
+<div class="headerContainer pull-left no-select">
+<div class="headerTitle clear logoScopusImg">
+<div class="logoScopusImg" ><a href="/home.uri?zone=header&amp;origin=AuthorProfile" title="Select to go to the Scopus main search page"><img src="/static/images/scopusLogoOrange.svg" alt="Select to go to the Scopus main search page"/></a></div></div>
+<div class="subNavHeader pull-right">	
+<div class="mainNavSect"></div><div id="navHeader" class=""> <nav><ul class="navHeader pull-left">		<li class="floatL"><a class="displayBlock" href="/search/form.uri?zone=TopNavBar&amp;origin=AuthorProfile" title="Search for documents, authors and affiliations." target="_top">Search</a></li><li class="floatL"><a id="sourceBrowseId" class="displayBlock" href="/sources.uri?zone=TopNavBar&amp;origin=AuthorProfile" title="Browse or search the indexed sources/journals by title." target="_top">Sources</a></li><li class="floatL"><a class="displayBlock" href="/alert/form/MyAlerts.uri?zone=TopNavBar&amp;origin=AuthorProfile" title="Manage your e-mail alerts." target="_top">Alerts</a></li><li class="floatL"><a class="displayBlock" href="/results/docList.uri?listId=myList&amp;origin=AuthorProfile&amp;zone=TopNavBar" title="Manage your temporary list of documents and saved lists." target="_top">Lists</a></li></ul></nav></div><div class="headerIcons pull-right">
+<li class="helpMenuCont floatL">
+<div id="helpMenu">
+<a href="javascript:void(0);" id="helpMenuLnk" title="Select to display help and Contact options" aria-haspopup="true"><span class="anchorText">Help</span><span class="iconNormal helpArrowDwn"></span></a>
+<div class="displayNone" id="helpMenuLnk-data">
+<div id="headerHelpLinks">
+<div class="custom-modal-arrow">
+<div class="custom-modal-top-border">
+<ul class="helpMenuList"> 		
+<li>
+<a href="#" target="globalHelp" onClick="return openGlobalhelp('/standard/help.uri?zone=TopNavBar&amp;origin=AuthorProfile&amp;topic=2316','globalHelp',760,570,0)" title="View Scopus help files (opens in a new window)">Help</a>
+</li>
+<li>
+<a href="#" target="globalHelp" onClick="return openGlobalhelp('/standard/tutorial.uri?zone=TopNavBar&amp;origin=AuthorProfile&amp;module=3701',
+'globalHelp',760,570,0)" title="Select to view tutorials (opens in a new window)">Tutorials</a>
+</li>
+<li>
+<a href="#" target="_blank" title="Send us an email (opens in a new window)" onClick="return openGlobalhelp('/standard/contactForm.uri?zone=TopNavBar&amp;origin=AuthorProfile',
+'globalHelp',760,570,0)">Contact us</a>
+</li>		
+<a class="iconSmall close pull-right help-close-icon" href="javascript:void(0);" title="Close window"><span class="hidden-label">Close</span>&nbsp;</a> 			
+<span id="help-close-placeholder" tabindex="-1"></span>   			 
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="scivalToggleLink floatL">
+<a href="https://www.scival.com" target="_blank" class="external">
+<span class="anchorText">SciVal</span>
+</a>
+</li>
+<li class="regLnk floatL">
+<div xmlns:cars="http://cars-services.elsevier.com/cars/server" class="CARS_panelClass" id="login-panel" displaystyle="">
+<div displaystyle="" id="login_page_main" class="    ">
+<div id="login_maincontroller" class="    " displaystyle=":right">
+<a id="login_reglink" displaystyle="" href="https://www.scopus.com/customer/profile/display.uri" title="Register a username and password for using alerts and other personal features">Register</a><a onclick="javascript:return CARS.submitCheck(&quot;toggleBackground,toggle&quot;,this)" href="javascript:void(0);" displaystyle="" id="login_loginlink" aria-haspopup="true" title="Login To Scopus" aria-controls="login_pop_container">
+<div class="CARS_displayNone">
+<script type="text/javascript">							if(true){							var metainfo = new CARS.metadata();							metainfo.elementId = 'login_loginlink_expand';							metainfo.action = 'toggle';							metainfo.dependency = 'login_loginlink_expand,login_loginlink_collapse,login_pop_container';							metainfo.name = 'login_loginlink_expand';							CARS_dataList.push(metainfo);							}						</script>
+</div>
+<img displaystyle=":expandImage" id="login_loginlink_expand"><div class="CARS_displayNone">
+<script type="text/javascript">							if(true){							var metainfo = new CARS.metadata();							metainfo.elementId = 'login_loginlink_collapse';							metainfo.action = 'toggle';							metainfo.dependency = 'login_loginlink_collapse,login_loginlink_expand,login_pop_container';							metainfo.name = 'login_loginlink_collapse';							CARS_dataList.push(metainfo);							}						</script>
+</div>
+<img displaystyle=":collapseImage:displaynone" id="login_loginlink_collapse">Login</a>
+<div class="CARS_displayNone">
+<script type="text/javascript">            if(true){            var metainfo = new CARS.metadata();            metainfo.elementId = 'login_loginlink';			metainfo.action = 'toggleBackground,toggle';			metainfo.dependency = 'login_pop_container';			if(metainfo.action.indexOf("toggle")!=-1){				metainfo.dependency = metainfo.dependency + "," + metainfo.elementId + "_expand," + metainfo.elementId + "_collapse";				metainfo.executeonload = '';				metainfo.togglevarid = '';				metainfo.requireddependency = '';			}			if(metainfo.action.indexOf("onchange")!=-1){				metainfo.selecttextdependency = '';				metainfo.executeonload = '';				metainfo.defaultselectvalue = '';				metainfo.togglevarid = '';				metainfo.requireddependency = '';			}            metainfo.name = '';            metainfo.validationcheck = '';			metainfo.error = '';			metainfo.togglestyle = ':background';			metainfo.togglestyleid = 'login_loginlink';            CARS_dataList.push(metainfo);            }        </script>
+</div>
+</div>
+<div class="CARS_clear"></div>
+<div id="login_pop_container" class="    " displaystyle=":paddingsmall:right:displaynone:background:border" focusrequired="true">
+<div id="login_pop_container_logform" class="    " displaystyle=":background:left:widthsmall">
+<div class="CARS_groupTitle">Login using your Elsevier credentials</div>
+<form action="https://www.scopus.com/customer/authenticate.uri" method="POST" enctype="form-data">
+<div id="login_username" displaystyle="" class="    ">
+<label for="username"><span>Username:</span></label><input type="text" name="username" id="username" aria-required="true" focusonload="true"><span displaystyle="" class="CARS_red">*</span>
+</div>
+<div id="login_password" displaystyle="" class="    ">
+<label for="login_password-password"><span>Password:</span></label><input type="password" name="password" id="login_password-password" aria-required="true"><span displaystyle="" class="CARS_red">*</span>
+</div>
+<div id="login_rem_forgot_submit" class="    " displaystyle="">
+<div displaystyle=":displayblock:paddingL120" class="    ">
+<input type="checkbox" id="login_rem_check" name="remember_flag" checked value="true" title="Remember me"><label for="login_rem_check">Remember me</label>
+</div>
+<div id="login_submit_btn" displaystyle=":displayinline:paddingL120" class="    ">
+<input type="submit" title="Login" aria-label="Login" value="Login" name="submit">
+</div>
+<a id="login_not_register" displaystyle="" href="https://www.scopus.com/customer/profile/display.uri" title="Register a username and password for using alerts and other personal features">Not Registered?<span displaystyle=":hidespan">Register a username and password for using alerts and other personal features</span></a>
+</div>
+<a id="login_forgot_pass" displaystyle=":fontverysmall:paddingL120:paddingT10" onclick="javascript:return CARS.submitCheck(&quot;openPopUp&quot;,this)" href="https://www.scopus.com/customer/reminder.uri" title="Opens in a new window." target="_popup">Forgotten your username or password?<span displaystyle=":hidespan">Opens in a new window.</span></a>
+<div class="CARS_displayNone">
+<script type="text/javascript">            if(true){            var metainfo = new CARS.metadata();            metainfo.elementId = 'login_forgot_pass';			metainfo.action = 'openPopUp';			metainfo.dependency = '';			if(metainfo.action.indexOf("toggle")!=-1){				metainfo.dependency = metainfo.dependency + "," + metainfo.elementId + "_expand," + metainfo.elementId + "_collapse";				metainfo.executeonload = '';				metainfo.togglevarid = '';				metainfo.requireddependency = '';			}			if(metainfo.action.indexOf("onchange")!=-1){				metainfo.selecttextdependency = '';				metainfo.executeonload = '';				metainfo.defaultselectvalue = '';				metainfo.togglevarid = '';				metainfo.requireddependency = '';			}            metainfo.name = '';            metainfo.validationcheck = '';			metainfo.error = '';			metainfo.togglestyle = '';			metainfo.togglestyleid = '';            CARS_dataList.push(metainfo);            }        </script>
+</div>
+<input type="hidden" name="auth_type" value="LOGIN_PASSWORD"><input type="hidden" name="http_method_name" value="POST"><input type="hidden" name="shibboleth_fence" value="true"><input type="hidden" name="isClaimingRemoteAccess" value="FALSE"><input type="hidden" name="remember_path_flag" value="false"><input type="hidden" name="path_choice" value=""><input type="hidden" name="path_choice_exists" value="false"><input type="hidden" name="acct_name" value=""><input type="hidden" name="dept_name" value=""><input type="hidden" name="PII_Req" value=""><input type="hidden" name="cars_cookie_flag" value="TRUE"><input type="hidden" name="origin" value="loginBox"><input type="hidden" name="zone" value="main">
+</form>
+</div>
+<div id="login_pop_container_socialform" class="    " displaystyle=":left:widthsmall:background">
+<form action="https://www.scopus.com/customer/authenticate.uri" method="POST" enctype="form-data">
+<a onclick="javascript:return CARS.submitCheck(&quot;submit&quot;,this,&quot;true&quot;)" href="javascript:void(0);" displaystyle="" id="login_open_athens" title="Log in using OpenAthens">OpenAthens login</a><input type="hidden" name="federation_id" value="6025"><input type="hidden" name="institution_id" value="88190"><input type="hidden" name="auth_type" value="SHIBBOLETH"><input type="hidden" name="domain_name" value="https://www.scopus.com/customer/authenticate.uri">
+</form>
+<div id="institutionAvail" class="    " displaystyle="">
+<div class="CARS_groupTitle">Login via your institution</div>
+<div id="rem-inst-choice-list" class="    " displaystyle="displayblock"></div>
+<a id="login_other_inst" displaystyle="" href="https://www.scopus.com/customer/institutionchoice.uri?shibboleth_fence=TRUE&amp;origin=loginBox&amp;zone=main" title="Other Institution login">Other Institution login</a>
+<div id="login-inst-choice-fed-inst-list" class="    " displaystyle=":displaynone">
+<div id="login-inst-choice-list" class="    " displaystyle="displayblock"></div>
+</div>
+</div>
+<div id="remotegroup" class="    " displaystyle="">
+<form action="https://www.scopus.com/customer/authenticate/manra.uri" method="POST" enctype="form-data">
+<a onclick="javascript:return CARS.submitCheck(&quot;submit&quot;,this,&quot;true&quot;)" href="javascript:void(0);" displaystyle="" id="login_remote_access" title="Apply for Remote Access">Apply for Remote Access</a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li id="headerHamburger" class="hamburger floatL">
+<a href="javascript:void(0);" class="toggleIcon" aria-expanded = "false" title="Expand navigation/Collapse navigation"></a>
+</li>
+</div>
+</div>
+</div>
+<div class="sidebarMenu no-select">
+<div class="sidebarMenuHeader ">
+<nav class="subNav">
+<div class="user">
+<span class="pull-left userName">Guest user</span>
+<span id="spineHamburger" class="hamburger floatR">
+<a href="javascript:void(0);" class="toggleIcon" aria-expanded = "false" title="Expand navigation/Collapse navigation"></a>
+</span>
+</div>
+</nav>
+</div>
+<div class="sidebarBottom">
+<section class="otherProducts">
+<div>
+<nav class="navSection">
+<div class="loggedInUserOpt">
+<span id="carsLoginSpine"><li class="regLnk floatL"></li></span>
+<div class="clear"></div>
+<div id="CARS_SETTINGS_TEMPLATE" class="displayNone">
+</div>
+<div class="personalAccess userOptionCnt">
+<a href="javascript:void(0);" class="primaryLink limitToggle profileAccess collapsed not-signed-in-user-link" data-toggle="collapse" data-target="#profileAccessCnt" aria-expanded="false">Personal profile access<span class="iconBig collapsed-spine-icon pull-right"></span></a>
+<ul id="profileAccessCnt" class="accessOptions spineAccordianCollapsed"></ul>
+</div>			
+<div class="userOptionCnt">
+<a href="javascript:void(0);" class="primaryLink limitToggle profileAccess collapsed" aria-expanded="false">My Scopus<span class="iconBig collapsed-spine-icon pull-right"></span></a>	
+<ul id="myScopusCnt" class="accessOptions spineAccordianCollapsed">
+<li><a href="javascript:void(0);" data-type="savedSearches" class="not-signed-in-user-link">Saved searches</a></li>
+<li><a href="javascript:void(0);" data-type="alerts" class="not-signed-in-user-link">Alerts</a></li>
+<li><a href="javascript:void(0);" data-type="savedLists" class="not-signed-in-user-link">Saved lists</a></li>
+<li><a href="javascript:void(0);" data-type="groupedAuthors" class="not-signed-in-user-link">Grouped authors</a></li>
+</ul>
+</div>
+<div class="userOptionCnt">
+<a href="javascript:void(0);" class="primaryLink limitToggle profileAccess expanded" aria-expanded="true">My organization<span class="iconBig collapsed-spine-icon pull-right"></span></a>
+<ul id="broughtToYouCnt" class="accessOptions collapse in">
+<li class="scopusBanner libraryBannerCont">
+</li>
+<li class="librCatl">
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<section class="userOptions">
+<ul>
+<li>
+<a target="_blank" href="https://www.scival.com">SciVal</a>
+</li>
+<li>
+<a target="_blank" href="https://www.mendeley.com">Mendeley</a>
+</li>
+<li>
+<a target="_blank" href="https://www.elsevier.com/solutions/pure">Pure</a>
+</li>
+<li id="privacyCenter">
+<a href="javascript:void(0);" class="not-signed-in-user-link">Privacy center</a>
+</li>
+</ul>
+</section>
+</nav>
+</div>
+</section>
+</div>
+</div>
+</div>
+<input type="hidden" id="overlayUpdatedTime" value="2017-02-23T18:24:05.000">
+<input type="hidden" id="overlayShownTime" value="2017-03-12T08:44:36.879">
+<input type="hidden" id="remindMeLaterHours" value="24">
+<div id="modalOverlay-dialog" class="displayNone"  >
+<div class="modalOverlayPopUp">
+<div class="modalOverlayHdr">
+<div class="logoScopusImg">
+<img src='/static/images/scopusLogoOrange.svg' alt='Scopus Logo' width='76' height='24' >
+</div>
+<div class="clear"></div>
+</div>
+<div class="modalOverlayOuterCnt">
+<p align='center'><a href='https://www.elsevier.com/promo/elsevier/scival-and-scopus-european-user-conference'><img src='https://pbs.twimg.com/media/C4jOWkRWMAANN7K.jpg:small' alt='SciVal Scopus Conference Registration' width='440' height='220'></a></p>
+</div>
+<div class="modalOverlayFooter">
+<div class="floatR">
+<span><a href='javascript:modalOverlay.remindMeLater();' id='modalRemindLater' title='Remind me later' alt='Remind me later'>Remind me later</a></span>
+<span aria-hidden="true" class="link_sep">|</span>
+<span class="verticalAlignMiddle displayInlineBlock">
+<button onclick='javascript:modalOverlay.acceptOverlay();' class='btnEnable' title='Close window (Do not show again)' alt='Close window (Do not show again)'><span>Close</span></button>
+</span>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="userNameError" class="errorInput displayNone" role="alert">You must enter a username.</div>
+<div id="passwordError" class="errorInput displayNone" role="alert">You must enter your password.</div>
+<div class="clear"></div>
+<div class="headerToolbar ">
+<h1 class="pull-left">Author details</h1>
+</div>
+<div class="clear"></div>   
+</div>
+</header>
+<main role="main">
+<div id="contentWrapper">
+<div id="container"> 
+<a name="skip1" id="skip1" href="#"></a>
+<div id="sciverseCanvasArea"  class="searchContent">
+<div class="sectionCnt">
+<div id="clusterMessages"></div>
+<form id="authorProfileForm" name="AuthorProfileForm" class="noMargin" action="/author/profile/handle.uri" method="post">
+<input type="hidden" name="citedAuthorsVal" value="57192655702"/>
+<input type="hidden" name="citedAuthorsGroupedVal" value=""/>
+<input id="authId" name="aid" type="hidden" value="57192655702"/>
+<input type="hidden" name="oneClickExport"/>
+<input type="hidden" name="tabSelected"/>
+<input type="hidden" name="ctoCount"/>
+<input type="hidden" name="zone"/>
+<input id="offset" name="offset" type="hidden" value=""/>
+<input id="clickedLink" name="clickedLink" type="hidden" value=""/>
+<input id="st1" name="st1" type="hidden" value=""/>
+<input id="st2" name="st2" type="hidden" value=""/>
+<input id="resultsKey" name="resultsKey" type="hidden" value=""/>
+<input id="feedbackWizardEnabled" name="feedbackWizardEnabled" type="hidden" value="true"/>
+<input type="hidden" name="authorPreferredName" value="Shah OP, Bruno M."/>
+<input type="hidden" name="sgroup" id="sgroup" value=""/>
+<input type="hidden" name="origin" value="AuthorProfile"/>
+<input type="hidden" name="orgDomain" value=""/>	
+<input type="hidden" name="emailAddress" value=""/>
+<input type="hidden" name="documentCount" value="1"/>
+<input type="hidden" name="documentGroupCount" value="0"/>
+<input type="hidden" name="citedbyThreshhold" id="citeThreshold" value="false"/>
+<input type="hidden" name="citedbyGroupThreshhold" id="citeGroupThreshold" value="false"/>
+<div id="emailAddr" style="display:none"></div>
+<div class="padding0" id="messagePH"></div>
+<div id="profilelayout" data-isPreview="false">
+<div id="profileleftside" class="containerSizeChange">
+<div id="profileleftinside" >
+<div id="printEmailLinksPH"></div>
+<div class="authInfoSection" data-lattes="" data-lattes-url=""><div class="nameSection"><h1><span class="hidden-label">Scopus - Author details -</span>Shah OP,&nbsp;Bruno M.</h1><div class="authAffilcityCounty"></div><div class="authId">Author ID: 57192655702</div><div></div></div><div class="rightSection"><div class="linkContainer"><a href="/standard/help.uri?topic=2845" class="" target="_blank"  title='About Scopus author identifier (opens in a new window)'>About Scopus Author Identifier	</a><span class="divider">|</span><span id="addlAuthorsHeaderTop"><a href="#potAuthModal" class="" id="showPotAuthModal" title='View potential author matches '>View potential author matches </a></span></div><div class="nameVariants"></div></div>  <div class="clear"></div></div>
+<div id="authorPublicationsPH"></div>
+<div id="authorTabPH"></div>
+</div>
+</div>
+<div id="profilerightside" >
+<div id="profilerightinside" >
+<div class="authEmailSect">&nbsp;</div>
+<div class="actionCalls leftPaddingZero alertShowPop">
+<ul>
+<li class="docAlert">
+<a href="#" id="saveAsSearchAlertAuthorFollow" title='Set alert for new documents' class="setAlertPop btnEnable ">Follow this Author</a>
+<span class="txtSmaller lightFontColor">Receive emails when this author <br>publishes new articles</span>
+<div id="saveAsSearchAlertAuthorFollow-data" class="bubble-source-data"></div>
+</li>
+<li id='followAuthorOnMendeleyLi' style='display: none;' class="docAlert">
+<a href="#" id="followAuthorOnMendeley" title='' class="setAlertPop btnEnable ">Follow this author on Mendeley</a>
+<span class="txtSmaller lightFontColor">Connect and interact with this author in your Mendeley network</span>
+<div id="followAuthorOnMendeley-data" class="bubble-source-data"></div>
+</li>
+<li id='unfollowAuthorOnMendeleyLi' style='display: none;' class="docAlert">
+<a href="#" id="unfollowAuthorOnMendeley" title='' class="setAlertPop btnEnable ">Unfollow this author on Mendeley</a>
+<div id="followAuthorOnMendeley-data" class="bubble-source-data"></div>
+</li>
+<li class="fontRightside">
+<a id="saveAsCitationAlertAuthor" href="#" title='Get citation alerts (opens in a new window)' class="setAlertPop icon saveAsAlert ">
+Get citation alerts
+</a>
+<div id="saveAsCitationAlertAuthor-data" class="bubble-source-data"></div>
+</li>
+<li class="fontRightside">
+<a aria-haspopup=true class="icon fecyt"  href="javascript:submitAuthorFormForClickedLinks('orcidButton');" class="icon orcid" 
+title='Associate this page with your ORCID identity or create an ORCID ID (opens in a new window)'
+aria-label='Associate this page with your ORCID identity or create an ORCID ID (opens in a new window)'>Add to ORCID</a>
+<a href="/standard/help.uri?origin=AuthorProfile&topic=2955" title="Learn more about importing author details to ORCID (Opens in a new window)" aria-label="Learn more about importing author details to ORCID (Opens in a new window)"
+onclick="return openSizedWindow('/standard/help.uri?origin=AuthorProfile&topic=2955')" class="searchTipsIconActive valignmiddle marginHelp"></a>
+</li>
+<li class="imageSpaceRem fontRightside">
+<a href="/author/profile/feedback.uri?id=57192655702&amp;origin=AuthorProfile" target="_blank" class="icon feedback" 
+title='Click to request author detail corrections for this author (opens in a new window)'>Request author detail corrections</a>
+</li>
+<li class="imageSpaceRem fontRightside CARS_panelClass">
+<a id="authScivalEx" href="#" class="icon scivalExport" title="Export author ID to SciVal (opens in a new window)" >Export profile to SciVal</a>
+<div id="authScivalEx-data" class="bubble-source-data"></div>	
+</li>
+</ul>
+</div>            
+<div id="citedByDetailsPH"></div>
+<div id="highchartcontainer" class="highChartContainer displayNone" ></div>
+<div id="authHistoryPH"></div>
+<div id="SC_ARS1" class="sgfHorToolbar sgfShowMyApps zoomFix sgfShowMoreLessApps" style="overflow:auto;">
+</div>
+</div>
+</div>
+</div>
+<div class="profFooterBakResults">
+<div class="bakResultCnt">           
+The data displayed above is compiled exclusively from articles published in the Scopus database. To request corrections to any inaccuracies or provide any further feedback, please <a href="/author/profile/feedback.uri?id=57192655702&amp;origin=AuthorProfile"  title='Send your author feedback to Scopus (registration required)'>contact us</a> (registration required).	    		
+</div>                  
+<div class="bakResultCnt">            
+The data displayed above is subject to the privacy conditions contained in the <a href="http://www.elsevier.com/locate/privacypolicy" target="_blank" title='privacy policy (opens in a new window)'> privacy policy </a>.
+</div>
+</div>
+<div class="clear"></div>
+<div id="dialog-modal" class="displayNone"><div class="potentialAffilLoad"><span class="loading"></span></div></div>
+<div class="displayNone">
+<div id="authorPublications"> 
+<div class="authAddlInfoSection">
+<div>
+<ul id="ulLeftList">
+<div id="authLeftList" class="authLeftSection">
+<li class="addInfoRow row1">
+<div class="labelColumn">Documents:</div>
+<div class="valueColumn">
+<a href="#" id="docCntLnk" data-title='View a list of documents by this author below' title='View a list of documents by this author below'>1</a>
+</div>
+<div class="valueColumnLink">
+<a href="javascript:submitAuthorFormForClickedLinks('HirschSingleAuthorEvaluatorButton');" class="jsEnabled txtSmaller iconAuthorEvaluator " 
+title="View charts and graphs related to this author">Analyze author output</a>
+</div>
+<div class="clear"></div>
+</li>
+<li class="addInfoRow row2">
+<div class="labelColumn">Citations:</div>
+<div class="valueColumn">
+<span id="totalCiteCount"></span>&nbsp; total citations by 0 document
+</div>
+<div class="valueColumnLink">
+</div>
+<div class="clear"></div>
+</li>
+<div class="clear"></div>
+<input type="hidden" name="documentCount" id="documentCountHidden" value="1"/>
+<input type="hidden" name="hSingleIndex" id="hSingleIndexHidden" value="0"/>
+</li>
+<li  class="addInfoRow row3">
+<div class="labelColumn">
+<span class="spanItalic">h</span>-index:
+</div>
+<div class="valueColumn">
+<span> 
+<a href="/standard/help.uri?topic=2349" target="globalHelp" onClick="return openGlobalhelp('/standard/help.uri?topic=2349','globalHelp',760,570,0)" class="txtSmaller searchTipsIconActive paddingL6" 
+title="Scopus is in progress of updating pre-1996 cited references going back to 1970. The h-index might increase over time. Learn more about h-index." >&nbsp;
+</a>	
+</span>
+</div>
+<div class="valueColumnLink">
+</div>
+<div class="clear"></div>
+</li>
+</div>
+<div class="clearB"></div>
+<li class="addInfoRow row4">
+<div class="labelColumn">Co-authors:</div>
+<div class="valueColumn">
+0
+</div>
+<div class="clear"></div>
+</li>
+<li class="addInfoRow row5">
+<div class="labelColumn">Subject area:</div>
+<div class="valueColumn" id="subjAreas">
+<div>
+Arts and Humanities
+,&nbsp;
+Social Sciences
+</div>
+</div>
+<div class="clear"></div>
+</li>
+</ul>
+</div>
+</div>
+<script>if(typeof prs != "undefined"){ prs.rt("pcr");}</script>
+</div>
+<div id="printEmailLinks">
+<div id="backResultLinks">
+</div>
+<div id="printEmailSec">
+<div class="featuresRowTopLink featuresRow">
+<div class="jsEnabled">
+<span>
+<a href="javascript:submitAuthorFormForClickedLinks('PrintButton');"
+class="txtSmaller iconPrintSmall "
+title='Print this page'>Print
+</a>
+</span>
+<span class="link_sep">|</span>
+<span>
+<a href="#emailLink"
+class="txtSmaller icon email "
+title='Email a link to this data'>E-mail
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="authorTab">
+<div class="authorTabHolder">
+<div>
+<div id='export_results-data'  class="displayNone"><div id='export_references-data'><div class='exportPadding' id="exportBubble"><h2 class='exportHeadingFont floatL'>Choose your default reference manager or file type:</h2><a class='exportHelp' href="#" role='button' alt='Get help with export (Opens in a new window)' title='Get help with export (Opens in a new window)' onclick="return openGlobalhelp('/standard/help.uri?zone=TopNavBar&origin=export&topic=2871','globalHelp',760,570,0);"></a><a id='closeExport' href="#" role='button' class='closeExport' alt='Close' title='Close'></a><div class="exportPaddingTB exportSubHeadingFont">Scopus offers integrated export functionality with Mendeley and Refworks.		<br>Or, to use a different reference manager, choose a file format</div><div><div class='width floatL jpWidth'><div  class='bgMedImage exportFont mendWidth'><a id='saveToMed' class='menImgTxtCntr' tabindex=0 href="#">Save to Mendeley</a></div><div  class='bgRefImage exportFont refWorksWidth ' ><a id='refWorkDir' class='refImgTxtCntr' tabindex=0 href="#">RefWorks direct export</a></div></div><div class='floatL formatTypeMargin'><ul><li><div class='exportFormatRadio '><span class="custom-radioBtn paddingRight" id="custom-radioBtn-RisFormat"><input type='radio' name="exportRadio" id="RIS"><span class="circle"><span class="dot"></span></span></span><label for='RIS'>RIS Format</label><span class="bgEndNoteImage"></span></div><div class='innerExportPadding exportSubHeadingFont'>EndNote, Reference Manager</div></li>				<li><div class='exportFormatRadio'><span class="custom-radioBtn paddingRight" id="custom-radioBtn-CSV"><input type='radio' name="exportRadio" id="CSV"><span class="circle"><span class="dot"></span></span></span><label for='CSV'>CSV</label></div><div class='innerExportPadding exportSubHeadingFont'>Excel</div></li><li><div class='exportFormatRadio bibTextPaddding'><span class="custom-radioBtn paddingRight" id="custom-radioBtn-BibTex"><input type='radio' name="exportRadio" id="BIB"><span class="circle"><span class="dot"></span></span></span><label for='BIB'>BibTeX</label></div></li><li><div class='exportFormatRadio'><span class="custom-radioBtn paddingRight" id="custom-radioBtn-Text"><input type='radio' name="exportRadio" id="TEXT"><span class="circle"><span class="dot"></span></span></span><label for='TEXT'>Text</label></div><div class='innerExportPadding exportSubHeadingFont'>ASCII in HTML</div></li></ul></div><div class='clearBoth'></div></div><div id='normalExport'><h2 class='chooseExport exportHeadingFont'>Choose the information to export:</h2><div class='exportSubHeadingFont firstSubHeading'>Choose the information you want to export to the reference manager or file.</div><div class='exportSelect ddlSect ui-front'><select id="exportView" name="view" class='selectExportFont'><option value="CiteOnly">			Citation information only</option><option value="CiteAbsKeyws">Citations and abstract information</option><option value="CiteAbsKeywsRefs">Citations, abstract and references</option><option value="FullDocument">All available information</option><option value="SpecifyFields">Specify fields to be exported</option></select></div><div id='exportViewDivDiabled' class='displayNone ddlSect ui-front'>		<select id="exportViewDiabled"  class='selectExportFont disabledSelectBox exportSelect' disabled='disabled'><option value="0">			</option>				</select><div class='mendeleyExportDes'>This setting is made within Mendeley.</div></div><div id="wholeHelpSection"><div class="thirdBox"  id="help"><div  id="viewHelp" class="width100"><div class="exportSubHeadingFont viewHelpSubHead">Selected field includes:</div><div class="left exportSubHeadingFont exportInfoSpacing exportInfoFirst"><div id="CiteOnly"><span class="helpULHeaderScopus ">Citation information</span><ul class="helpUL"><li class="helpLI">Author(s), document title,year, <span id="eidLi" class="displayNone">EID</span><br>source title, volume, issue, pages<br>citation count, source and document Type, DOI</li></ul></div><div id="Bib" style="display:none;" ><span class="helpULHeaderScopus ">Bibliographical information</span><ul class="helpUL"><li class="helpLI">Affiliations</li></ul></div><div id="FullBib" style="display:none;" ><span class="helpULHeaderScopus ">Bibliographical information</span><ul class="helpUL"><li class="helpLI">Affiliations,serial identifiers (e.g. ISSN), doi,<br>pubMed id, publisher, editor(s), language of original document<br>correspondence address, abbreviated source title</li></ul></div></div><div class="left exportSubHeadingFont "><div id="CiteAbsKeyws"  class='displayNone exportInfoSpacing'><span class="helpULHeaderScopus ">Abstract and Keywords</span><ul class="helpUL"><li class="helpLI">Abstract, author keywords</ul></div><div id="CiteAbsKeywsRefs"  class='displayNone exportInfoSpacing rightPaddingSecColumn'><div><span class="helpULHeaderScopus ">Abstract and Keywords</span><UL class="helpUL"><li class="helpLI">Abstract, author keywords</li><li class="helpLI" style="display:none" id="ik">index keywords</li></ul></div><div id="fd" class="displayNone" ><span class="helpULHeaderScopus ">Fund Details</span><ul class="helpUL"><li class="helpLI">Number, acronym,sponsor, funding text</li></ul></div><div><span class="helpULHeaderScopus ">Include references</span><UL class="helpUL"><li class="helpLI">Include references</li></ul></div><div id="otherInfo" class="displayNone"><span class="helpULHeaderScopus ">Other information</span><UL class="helpUL"><li class="helpLI">Tradenames and manufacturers, accession numbers and chemicals<br>conference information</li></ul></div></div></div>	<div class="clearBoth"></div>		</div></div><div id="exportSpecifyFields"  class='displayNone exportSubHeadingFont width100'><div class="left"><div><ul class="specifyFieldsUL"><li class="specifyFieldsLI "><span class="custom-checkbox"><input id="selectedCitationInformationItemsAll-Export" type="checkbox" onclick="selectDeselectCheckBoxs(this)"  value="on" name="selectedCitationInformationItemsAll"><span class="box"><span class="tick"></span></span></span><span><label for="selectedCitationInformationItemsAll-Export">Citation information</label></span></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export1" type="checkbox" class="chkbox"  onclick="selectDeselectSubCheckBoxs(this)"  value="_Authors_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export1">Author(s)</label></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export2" type="checkbox" class="chkbox"  onclick="selectDeselectSubCheckBoxs(this)"  value="_Title_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export2">Document title</label></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export3" type="checkbox" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)"  value="_Year_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export3">Year</label></li><li id="eidChckbox" class="displayNone"><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export8" type="checkbox" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)"  value="_EID_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export8">EID</label></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export4" type="checkbox" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_SourceTitle_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export4">Source title</label></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export5" type="checkbox"  class="chkbox" onclick="selectDeselectSubCheckBoxs(this)"  value="_Volume_Issue_ArtNo_PageStart_PageEnd_PageCount_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export5">Volume, Issue, Pages</label></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export6" type="checkbox" class="chkbox" onclick="selectDeselectSubCheckBoxs(this)"  value="_CitedBy_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export6">Citation count</label></li><li><span class="custom-checkbox"><input id="selectedCitationInformationItems-Export7" type="checkbox"  class="chkbox" onclick="selectDeselectSubCheckBoxs(this)"  value="_DocumentType_Source_" name="selectedCitationInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export7">Source and Document Type</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedCitationInformationItems" value="_DOI_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedCitationInformationItems-Export9"><span class="box"><span class="tick"></span></span></span><label for="selectedCitationInformationItems-Export9">DOI</label></li></ul></div><div><ul class="specifyFieldsUL"><li class="specifyFieldsLI "><span class="custom-checkbox"><input id="selectedOtherInformationItemsAll-Export" type="checkbox" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedOtherInformationItemsAll"><span class="box"><span class="tick"></span></span></span><span ><label for="selectedOtherInformationItemsAll-Export">Other information</label></span></li><li><span class="custom-checkbox"><input id="selectedOtherInformationItems-Export1" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Manufacturers_Tradenames_" name="selectedOtherInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedOtherInformationItems-Export1">Tradenames and Manufacturers</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedOtherInformationItems" value="_ChemicalsCAS_MolecularSequenceNumbers_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedOtherInformationItems-Export2"><span class="box"><span class="tick"></span></span></span><label for="selectedOtherInformationItems-Export2">Accession numbers and Chemicals</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedOtherInformationItems" value="_ConferenceName_ConferenceDate_ConferenceLocation_ConferenceCode_Sponsors_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedOtherInformationItems-Export3"><span class="box"><span class="tick"></span></span></span><label for="selectedOtherInformationItems-Export3">Conference information</label></li></ul></div></div><div class="left"><div>	<UL class="specifyFieldsUL"><li class="specifyFieldsLI "><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItemsAll" value="on" onclick="selectDeselectCheckBoxs(this)" id="selectedBibliographicalInformationItemsAll-Export"><span class="box"><span class="tick"></span></span></span><span ><label for="selectedBibliographicalInformationItemsAll-Export">Bibliographical information</label></span></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_Affiliations_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export1"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export1">Affiliations</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_ISSN_ISBN_CODEN_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export2"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export2">Serial identifiers (e.g. ISSN)</label></li>					<li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_PubMedID_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export4"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export4">PubMed ID</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_Publisher_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export5"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export5">Publisher</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_Editors_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export6"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export6">Editor(s)</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_LanguageOfOriginalDocument_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export7"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export7">Language of Original Document</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_CorrespondenceAddress_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export8"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export8">Correspondence Address</label></li><li><span class="custom-checkbox"><input type="checkbox" name="selectedBibliographicalInformationItems" value="_AbbreviatedSourceTitle_" onclick="selectDeselectSubCheckBoxs(this)" id="selectedBibliographicalInformationItems-Export9"><span class="box"><span class="tick"></span></span></span><label for="selectedBibliographicalInformationItems-Export9">Abbreviated Source Title</label></li></ul>	</div></div>	<div class="left specificRightPadding" ><div><ul class="specifyFieldsUL"><li class="specifyFieldsLI "><span class="custom-checkbox"><input id="selectedAbstractInformationItemsAll-Export" type="checkbox" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedAbstractInformationItemsAll"><span class="box"><span class="tick"></span></span></span><span ><label for="selectedAbstractInformationItemsAll-Export">Abstract and Keywords</label></span></li><li><span class="custom-checkbox"><input id="selectedAbstractInformationItems-Export1" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Abstract_" name="selectedAbstractInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedAbstractInformationItems-Export1">Abstract</label></li><li><span class="custom-checkbox"> <input id="selectedAbstractInformationItems-Export2" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_AuthorKeywords_" name="selectedAbstractInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedAbstractInformationItems-Export2">Author Keywords</label></li><li><span class="custom-checkbox"><input id="selectedAbstractInformationItems-Export3" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_IndexKeywords_" name="selectedAbstractInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedAbstractInformationItems-Export3">Index Keywords</label></li></ul></div><div ><UL class="specifyFieldsUL"><li class="specifyFieldsLI "><span class="custom-checkbox"><input id="selectedFundInformationItemsAll-Export" type="checkbox" onclick="selectDeselectCheckBoxs(this)" value="on" name="selectedFundInformationItemsAll"><span class="box"><span class="tick"></span></span></span><span ><label for="selectedFundInformationItemsAll-Export">Funding Details</label></span></li><li><span class="custom-checkbox"><input id="selectedFundInformationItems-Export1" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Number_" name="selectedFundInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedFundInformationItems-Export1">Number</label>		</li><li><span class="custom-checkbox">  <input id="selectedFundInformationItems-Export2" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Acronym_" name="selectedFundInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedFundInformationItems-Export2">Acronym</label></li><li><span class="custom-checkbox"><input id="selectedFundInformationItems-Export3" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Sponsor_" name="selectedFundInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedFundInformationItems-Export3">Sponsor</label></li><li><span class="custom-checkbox"><input id="selectedFundInformationItems-Export4" type="checkbox" onclick="selectDeselectSubCheckBoxs(this)" value="_Text_" name="selectedFundInformationItems"><span class="box"><span class="tick"></span></span></span><label for="selectedFundInformationItems-Export4">Funding text</label></li></ul></div><div><ul class="specifyFieldsUL"><li class="specifyFieldsLI "><span class="custom-checkbox"> <input id="selectedReferenceInformationItems-Export" type="checkbox" value="_References_" name="selectedReferenceInformationItems"><span class="box"><span class="tick"></span></span></span><span ><label for="selectedReferenceInformationItems-Export">Include references</label></span></li></ul></div></div>	<div class='clearBoth'></div>				</div></div></div><div id='referenceExport' class='displayNone'><div class='exportHeadingFont referenceMessage'></div><div class="left exportSubHeadingFont exportInfoSpacing exportInfoFirstReference"><div><span class="helpULHeaderScopus Bold">Citation information</span><ul class="helpUL"><li class="helpLI">Author(s), document title,year, <span id="refEidLi" class="displayNone">EID</span><br>source title,volume, issue, pages<br>citation count, source and document Type</li></ul></div></div><div class='clearBoth'></div></div><div class='dataExportBlock'>	<div class="floatR"><div class='floatL'><input type="button" title='Disabled - Select a file format above to Export' alt='Disabled - Select a file format above to Export' class="btnEnable exportBtn" id="exportTrigger" value='Export' name="ExportPopUp" onclick="oneClick.oneClickExportSubmit(this,true);" ></div><div class='clearLeft'></div></div><div class='clearRight'></div></div></div></div></div><div class='txtZoneInfoMsgContainer displayNone' role="alert"></div><div class='confirmMsgContainer displayNone' role="alert"><span></span></div><div class='warningMsgContainer displayNone' role="alert"></div><div id='chunkExport-data' class='displayNone'><div class ='exportPadding'><div class='exportHeadingFont'><span class="closeExport chunkExportClose" id="chunkExportClose"></span>With this many documents selected, please choose your <br> preferred export type:	</div><div class='exportPaddingTB exportHeadingFont'><span class="custom-radioBtn"><input type='radio' name='exportTypeSelection'  id='exportRadio'/><span class="circle"><span class="dot"></span></span></span><span id='exportTypeAndFormat'  class=' exportTypeAndFormatBold'></span></div><div id='nonMendeleyExpLimitMsg' class='limitMessage exportSubHeadingFont displayNone'>Only the first 2,000 documents will be exported.</div><div id='mendeleyExpLimitMsg' class='limitMessage exportSubHeadingFont displayNone'>Only the first 1,000 documents will be exported.</div><div class='exportSeparator orFontAndColor'><span>OR</span><span class='horizontalLine'></span></div><div><span class="custom-radioBtn "><input type='radio' name='exportTypeSelection' checked='checked' id='chunkExportRadio'/><span class="circle"><span class="dot"></span></span></span><span id='exportMessageAndSize' class='exportTypeAndFormat exportHeadingFont'></span></div><div class='exportExp exportSubHeadingFont'>Citation information includes:<br><span class='subtitleExp exportSubHeadingFont'>Author(s),document title,year,source title,<br>volume, issue, pages,					citation count,source and document Type,DOI</span></div><div id='chunkExportFormSection'><div class='exportPaddingTB emailAndAddress'>Email address</div><div><input type='text' id='emailAddress' class="roundedSmall defaultText defaultTextActive waterMarkOn exportpopupTextBoxWidth" value='' /></div><div class='exportPaddingTB emailAndAddress'><span>Email format</span><span class="custom-radioBtn htmlAndText"><input type='radio' name='emailFormat' id='HTML' checked='checked'/><span class="circle"><span class="dot"></span></span></span><span class='Bold'><label for='HTML'>HTML</label></span><span class="custom-radioBtn htmlAndText"><input type='radio' name='emailFormat' id='EMAIL_TEXT'/><span class="circle"><span class="dot"></span></span></span><span class='Bold'><label for='EMAIL_TEXT'>Text</label></span></div><div class='exportSubHeadingFont'>When completed, we will email you a link to download your export.<br> The link will be available for 7 days.</div></div><div class="floatRight chunkExportButton"><input type="button" title='Export' alt='Export' class="btnDisabled exportBtn" id="chunkExportTrigger" value='Export' name="ExportPopUp" onclick="oneClick.chunkExportSubmit(this,true);" disabled='disabled' ></div><div class='clearBoth'></div></div></div><div id='exportLimit' class='displayNone'>2000</div><div id='exportLimitMax' class='displayNone'>20000</div><div id='exportLimitMendeley' class='displayNone'>1000</div> 
+<input type="hidden" id='doccountVal' value='1'>
+<input type="hidden" id='citecountVal' value='0'>
+<div class="padding0 docOverTwoK" id="docTabMsgPH"></div>
+<div class="padding0 docOverTwoK" id="tabMsgPH">
+<div id="warningMsgContainer" role="alert" aria-live="assertive"><span class="ariaHidden">Warning message</span><span>Your search found 0 documents. Scopus can display up to 2000 documents in the search results list.<p> To see a different set of 2000 documents from your search results, choose a different sort option.</p></span></div>
+</div>
+<div class="authTab">
+<div id="tabs" data-count='{"doccount":1,"citecount":0,"coauthcount":0}'>
+<ul>
+<li class="docRel">
+<h3>
+<a href="#documentTab"  id="docLi" data-title="Select to view author’s document list"><span>1</span> Document</a>
+</h3>
+</li>
+</ul>
+<div id="documentTab" class="docRel">
+<div class="authDocumentOptions">
+<div class="resultsCountLabel floatL">
+<h2><span class="resultsCount">1</span> document</h2>
+</div>
+<div class="authorResultsOptionalLinks ">
+<a href="https://www.scopus.com/search/submit/author.uri?author=Shah+OP%2c+Bruno+M.&amp;origin=AuthorProfile&amp;zone=documentsTab&amp;authorId=57192655702" title="View in search results format for more sorting options and/or to view a full list of documents">
+View in search results format
+</a>
+</div>
+<div class="sortContainer" id="docSortContainer">
+<nav id="sortNav">
+<input type="hidden" value="plf-f" name="sort" id="sortType"/>
+<input type="hidden" value="f" name="sortOrderFlag">
+<span class="sortLabel floatL fontColorGrey">
+Sort on:
+</span>
+<span id="navLoad"></span>                                                               
+</nav>
+</div>
+<div class="clear"></div>
+</div>
+<ul>
+<div class="authDocList alertShowPop" id="documentTabHeader">
+<span id='chunkExport'>
+<a href='#' class="icon oneClickExport clickAction " data-type="exportLink" title='Export all this author&#39s documents' id="export_results">
+Export all
+</a>
+</span>
+<span class="divider">|</span>
+<span>
+<a class="txtSmaller icon addToMyList " title='Add these documents to a temporary list' href="#" 
+id="addAllToList" data-type="tempList">Add all to list</a>
+</span>	
+<span id="addAllToList-data" class="bubble-source-data"></span>	
+<span class="divider">|</span>
+<span>
+<a href="#" id="saveAsSearchAlertAuthorDoc" title='Receive emails when this author publishes new documents in Scopus' class="setAlertPop txtSmaller icon saveAsAlert marginR15 ">
+Set document alert
+</a>
+<div id="saveAsSearchAlertAuthorDoc-data" class="bubble-source-data"></div>
+</span>
+<span class="divider">|</span>
+<span>
+<a href="/results/rss/handler.uri?authorId=57192655702&amp;authorName=Shah OP B." target="_blank" title='Set an RSS feed for when this author publishes new documents in Scopus' class="txtSmaller icon setFeed">
+Set document feed
+</a>
+</span>
+</div>
+</ul>
+<div id="documentTabList" class="authTabSec"></div>
+</div>
+<div id="citedByTab" class="citedByRel">
+<div class="authDocumentOptions">
+<div class="resultsCountLabel floatL">
+<h2><span class="resultsCount">0</span> document</h2>
+</div>
+<div class="authorResultsOptionalLinks ">
+<a href="/author/citedby.uri?origin=authorProfile&zone=citedByTab&citedAuthorId=57192655702" title='View in search results format for more sorting options and/or to view a full list of documents'>
+View in search results format
+</a>
+</div>
+<div class="sortContainer" id="citedBySortContainer"></div>
+<div class="clear"></div>
+</div>
+<div class="authDocList alertShowPop" id="citedByTabHeader">
+<span class="divider">|</span>
+<a class="txtSmaller icon addToMyList " title='Add these documents to a temporary list' href="#" id="addAllCiteToList" >Add all to list</a>	
+<span id="addAllCiteToList-data" class="bubble-source-data"></span>	
+<span class="divider">|</span>
+<span>
+<a href="#" id="saveAsCitationAlertAuthorCit" title='Set alert for author citation' class="setAlertPop txtSmaller icon saveAsAlert marginR15 ">
+Set citation alert
+</a>
+<div id="saveAsCitationAlertAuthorCit-data" class="bubble-source-data"></div>
+</span>
+</div>
+<div id="citedByTabList"></div>
+</div>
+<div id="coAuthTab" class="coAuthRel">
+</div>
+</div>
+</div>
+</div>
+<div class="navigationClass">
+<div class="rightNavDiv">
+<div class="pull-right">
+<a class="topOfPage" href="#top" title="Top of page">
+<span class="ico-navigate-up" aria-hidden="true"></span>
+<span class="anchorText">
+Top of page
+</span>
+</a> 
+</div>
+</div>	
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="profBakReslutCont">
+</div>
+</div>
+<div id="authHistory">
+<div class="rightHeaderSection citedHeader">
+<h2 class="txtLargest margin0">
+Author History
+</h2>
+</div>
+<div class="rightContentSection">
+<div class="authorHisHeader" >
+<div class="hisPubyear">
+Publication range: 2017 - Present
+</div>
+<div class="hisWebsearch" id="historyWebSrchPH"></div>
+<div class="section21" id="ReferenceDiv">
+References:		
+<a href="https://www.scopus.com/search/submit/references.uri?origin=AuthorProfile&amp;citeCnt=1&amp;sot=aut&amp;sdt=citedreferences&amp;citingId=57192655702" class="" title='see all references cited by this author' 
+>17</a>
+</div>
+</div>
+<div class="hr"><hr></div>
+<div class="paddingT4 paddingB3">
+<span class="authHisWeb">Source history:</span>
+<br>
+<ul id="sourceHistoryUL">
+<li class="txtSmaller ">
+<a href="https://www.scopus.com/sourceid/21100205746" title="Go to the information page for this source">Logos (Lithuania)</a>&nbsp;
+<span class="txtSmaller floatR "><a href="https://www.scopus.com/search/submit/author.uri?author=Shah+OP%2c+Bruno+M.&amp;origin=AuthorProfile&amp;zone=&amp;srcTitle=Logos+%28Lithuania%29&amp;authorId=57192655702" title="View documents of this author">
+View documents	
+</a></span>
+</li>
+</ul> 
+<div class="paddingB8">
+<a href="javascript:toggleSourceHistory()" class="" title='Show more source titles'>
+<span class="txtSmaller " align="right" id="sourcehistorylink">
+View More
+</span>
+</a>
+</div>
+</div>
+<script>if(typeof prs != "undefined"){prs.rt("scr_authorHistory");}</script>
+</div>  
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</main>
+<footer>
+<a href="#" name="skiptofooter" id="skiptofooter"></a>
+<div class="productFooter">
+<div class="productCol aboutScopusCol">
+<h2>About Scopus</h2>
+<ul>
+<li><a target="_blank" href="https://www.elsevier.com/online-tools/scopus" title='Learn more about Scopus (opens in a new window)'>What is Scopus</a></li>
+<li><a target="_blank" href="https://www.elsevier.com/online-tools/scopus/content-overview/" title='Learn more about Scopus&#039; content coverage (opens in a new window)'>Content coverage</a></li>
+<li><a target="_blank" href="https://blog.scopus.com/" title='Read the Scopus Blog (opens in a new window)'>Scopus blog</a></li>
+<li><a target="_blank" href="https://dev.elsevier.com/" title='Learn more about Scopus API&#039;s (opens in a new window)'>Scopus API</a></li>
+<li><a target="_blank" href="https://www.elsevier.com/legal/privacy-approach" title='View privacy matters page (opens in a new window)'>Privacy matters</a></li>
+</ul>
+</div>
+<div class="productCol langCol">
+<h2>Language</h2>
+<ul class="list-unstyled">
+<li lang="ja" >
+<a lang="ja" hreflang="ja" href="/personalization/switch/Japanese.uri?origin=AuthorProfile&zone=footer&locale=ja_JP" target="_top" title="日本語版を表示する">
+<span class="anchorText">
+日本語に切り替える
+</span>
+</a>
+</li>
+<li lang="zh-Hans" >
+<a lang="zh-Hans" hreflang="zh-Hans" href="/personalization/switch/Chinese.uri?origin=AuthorProfile&zone=footer&locale=zh_CN" target="_top" title="查看简体中文版本">
+<span class="anchorText">
+切换到简体中文
+</span>
+</a>
+</li>
+<li lang="zh-Hant" >
+<a lang="zh-Hant" hreflang="zh-Hant" href="/personalization/switch/Chinese.uri?origin=AuthorProfile&zone=footer&locale=zh_TW" target="_top" title="查看繁體中文版本">
+<span class="anchorText">
+切換到繁體中文
+</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="productCol">
+<h2>Customer Service</h2>
+<ul>
+<li><a target="_blank" title="View Scopus help files (opens in a new window)" href="/standard/contactUs.uri?pageOrigin=footer">Help</a></li>
+<li><a target="_blank" title="Send us an email (opens in a new window)" href="/standard/contactForm.uri?pageOrigin=footer">Contact us</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<div class="companyFooter">
+<div class="companyCol elsevier"><a target="_blank" href="https://www.elsevier.com/" title="Go to the Elsevier site (opens in a new window)"><img src="/static/images/logo_Elsevier.svg" alt="Elsevier"></img></a></div>
+<div class="companyCol">
+<div>
+<div class="termsCondetions"><a target="_blank" href="https://www.elsevier.com/locate/termsandconditions" title="View the terms and conditions of Elsevier (opens in a new window)">Terms and conditions</a></div>
+<div class="privacyPolicy"><a target="_blank" href="https://www.elsevier.com/locate/privacypolicy" title="View the privacy policy of Elsevier (opens in a new window)">Privacy policy</a></div>
+</div>
+<div class="copyright"> Copyright © 2017 <a target="_blank" href="https://www.elsevier.com" title="Go to the Elsevier site (opens in a new window)">Elsevier B.V</a>. All rights reserved. Scopus® is a registered trademark of Elsevier B.V.</div>
+<div class="cookie">Cookies are set by this site. To decline them or learn more, visit our <a target="_blank" href="https://help.elsevier.com/app/answers/detail/a_id/
+2964
+/p/8150/" title="See Cookie details (opens in a new window)">Cookies page</a>.</div>
+</div>
+<div class="relxLogo"><a href="http://www.relx.com" title="Go to RELX Group Homepage (Opens in a new window)" target="_blank"><img src="/static/images/relexLogo.svg" alt="RELX Group"></img></a></div>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">	
+//client performance stats call.
+var originVal = "AuthorProfile";
+var SDM = new Object;
+SDM.si = new Object;
+SDM.si.sds = "f44607d0df9f9d3f22b52a6c0c73da1413bdd56a94400d1a5fccab0fc3783991ab1335dd8dee4be763ca9d11473d425b";
+SDM.tid = "1418118A832A00F2423FC63714D48783.wsnAw8kcdt7IPYLO0V48gA:354";
+SDM.ep = new Object();
+SDM.ep.prDevice = "https://els-eum.elsst.com";
+SDM.ep.urlPrefix = "http://www.scopus.com";
+SDM.ieVersion="8";
+SDM.pru = "https://els-eum.elsst.com";
+SDM.pru = window.location.protocol + SDM.pru.replace('http:','').replace('https:','');
+SDM.platform = "SC";
+SDM.pageType = "AuthorProfile";
+SDM.pageTransKey = "Sun Mar 12 08:44:36 UTC 2017#i-05f8a7c2e4ae4433a#1418118A832A00F2423FC63714D48783.wsnAw8kcdt7IPYLO0V48gA:354#1418118A832A00F2423FC63714D48783.wsnAw8kcdt7IPYLO0V48gA#222.205.18.97";
+SDM.sds = "15e6-484e4a1ca51f951bf1724dd5d7996582359";
+SDM.pf = new Object();
+SDM.cpc = "SC";
+</script>
+<script type="text/javascript" src="/gzip_1329852914/bundles/AuthorProfileBottom.js" ></script>
+<script type="text/javascript">
+jQuery(function(){
+pageDataUtil.loadFooterPageDataObject();
+});
+</script>
+</footer>
+<script type="text/javascript">
+if(document.forms['ssoregForm'] != null) {
+validateSSOREG();
+}
+</script>
+<script type="text/javascript">	
+var WAM = new Object;
+WAM.sep = "#";
+WAM.ud = "IPRANGE#75809#378034#181549";
+WAM.cars = "";
+WAM.part = "";
+WAM.exportAction=function(format, info, count) {return true;};
+</script>
+<script type="text/javascript"></script>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"0268925da8","agent":"","beacon":"bam.nr-data.net","applicationTime":667,"applicationID":"31454162","transactionName":"MwAGYhBYX0oEABUNXQpKN0YQUF9eJgwPEEALCQhTEBZQTBELCAAdAAAQVwtVEREiJjVN","queueTime":0}</script></body>
+</html>
