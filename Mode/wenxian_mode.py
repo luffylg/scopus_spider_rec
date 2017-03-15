@@ -162,7 +162,10 @@ class Wenxian_mode(ModeBase):
             if authorId not in idlist:
                 idlist.append(authorId)
                 # print('第'+str(sum)+'作者')
-                author= self.crawel(ses, authorId, sum)
+                try:
+                    author= self.crawel(ses, authorId, sum)
+                except requests.exceptions.ReadTimeout:
+                    continue
                 if author:
                     authors.append(author)
         return authors
