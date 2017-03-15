@@ -43,19 +43,25 @@ def parser(title,method):
 
     return hh
 
+def do(parse):
 
-titles=open('spider.txt','r',encoding='utf-8').readlines()
-a=''
-i=0
-for title in titles:
-    # i+=1
-    # if i%2==0:
-    #     continue
-    #rstrip() 删除 string 字符串末尾的指定字符
-    print(parser(title.rstrip('\n'),'1'))
-
+    with open('spider.txt','r',encoding='utf-8') as title:
+        titles=title.readlines()
+        a=''
+        i=0
+        for title in titles:
+            # i+=1
+            # if i%2==0:
+            #     continue
+            #rstrip() 删除 string 字符串末尾的指定字符
+            rs=parser(title.rstrip('\n'),str(parse))
+            a+=(rs+"\n")
+            print(rs)
+    return a
 # for title in titles:
 #     a+=title.replace('\n','')
 # a.replace('\n','')
 # print(a)
 # parser(a,2)
+if __name__ == '__main__':
+    do('4')

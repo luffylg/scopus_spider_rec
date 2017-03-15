@@ -3,8 +3,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from Mode.ModeBase import ModeBase
-from utils import clean
+from ..Mode.ModeBase import ModeBase
+from ..utils import clean
 
 
 class Wenxian_mode(ModeBase):
@@ -150,7 +150,10 @@ class Wenxian_mode(ModeBase):
         # fout = open('output4.html', 'w',encoding="UTF-8")
         # fout.write(s2.text)
         soup2 = BeautifulSoup(s2.text, 'html.parser')
-        atitles = soup2.find('div', id='authorlist').find_all('a', title='Show Author Details')
+        atitles_list = soup2.find('div', id='authorlist')
+        if not atitles_list:
+            return None
+        atitles=atitles_list.find_all('a', title='Show Author Details')
         sum = 0
         authors = []
         for atitle in atitles:
