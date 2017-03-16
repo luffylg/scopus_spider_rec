@@ -3,8 +3,9 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from ..Mode.ModeBase import ModeBase
-from ..utils import clean
+import mythread
+from Mode.ModeBase import ModeBase
+from utils import clean
 
 
 class Wenxian_mode(ModeBase):
@@ -156,6 +157,7 @@ class Wenxian_mode(ModeBase):
         atitles=atitles_list.find_all('a', title='Show Author Details')
         sum = 0
         authors = []
+        threads=[]
         for atitle in atitles:
             authorId = re.findall(r'authorId=\w+&', atitle['href'])[0].replace('authorId=', '').replace('&', '')
             sum += 1
@@ -163,9 +165,26 @@ class Wenxian_mode(ModeBase):
                 idlist.append(authorId)
                 # print('第'+str(sum)+'作者')
                 try:
-                    author= self.crawel(ses, authorId, sum)
+                    t=mythread.MyThread(ses, authorId, sum)
+                    threads.append(t)
+                #     author=t.get_result()
+                #     # author= self.crawel(ses, authorId, sum)
                 except requests.exceptions.ReadTimeout:
                     continue
-                if author:
-                    authors.append(author)
+                # if author:
+                #     authors.append(author)
+
+        for t in threads:
+            try:
+                t.setDaemon(True)
+                t.start()
+                # author= self.crawel(ses, authorId, sum)
+            except requests.exceptions.ReadTimeout:
+                continue
+        for t in threads:
+            t.join()
+        for t in threads:
+            author = t.get_result()
+            if author:
+                authors.append(author)
         return authors
