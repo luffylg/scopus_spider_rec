@@ -10,6 +10,7 @@ class MyThread(Thread):
         self.ses = ses
         self.AuthorID=AuthorID
         self.bianhao=bianhao
+        self.result=None
 
     def run(self):
         self.result = ModeBase().crawel(self.ses,self.AuthorID,self.bianhao)

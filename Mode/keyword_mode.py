@@ -29,7 +29,10 @@ class Keyword_mode(Wenxian_mode):
                 link = spans.a['href']
                 s2 = ses.get(link)  # 进入文章页面
                 soup2 = BeautifulSoup(s2.text, 'html.parser')
-                atitles = soup2.find('div', id='authorlist').find_all('a', title='Show Author Details')
+                tmp=soup2.find('div', id='authorlist')
+                if not tmp:
+                    continue
+                atitles = tmp.find_all('a', title='Show Author Details')
                 sum=0
                 for atitle in atitles:
                     sum += 1

@@ -50,6 +50,8 @@ def do(parse):
         a=''
         i=0
         for title in titles:
+            if title.startswith('http'):
+                continue
             # i+=1
             # if i%2==0:
             #     continue
@@ -64,4 +66,4 @@ def do(parse):
 # print(a)
 # parser(a,2)
 if __name__ == '__main__':
-    do('4')
+    do('2')

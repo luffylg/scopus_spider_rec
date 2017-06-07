@@ -35,11 +35,14 @@ class HtmlParser():
             return Getid(span[int(i)-1])
 
     def GetAuthorMessage(self, s2):
-        fout = open('output.html', 'w',encoding="UTF-8")
-        fout.write(s2.text)
+        # fout = open('output2.html', 'w',encoding="UTF-8")
+        # fout.write(s2.text)
         #soup2 = BeautifulSoup(s2.text, 'html.parser')
-        soup2=BeautifulSoup(open('output.html','r',encoding="UTF-8"),'html.parser')
+        # soup2=BeautifulSoup(open('output.html','r',encoding="UTF-8"),'html.parser')
+        soup2=BeautifulSoup(s2.text,'html.parser')
         namesec=soup2.find_all('div',class_='nameSection')
+        if not namesec:
+            return None
         span2=namesec[0].find_all('div',class_='authAffilcityCounty')
         namejihe=namesec[0].h1.text.replace(namesec[0].h1.span.text,'').replace('\n','').split(',')
         name=namejihe[-1].strip()+' '+namejihe[0]
@@ -76,12 +79,21 @@ class HtmlParser():
         #soup4=BeautifulSoup(open('output3.html','r',encoding="UTF-8"), 'html.parser',from_encoding="UTF-8")
         soup4=BeautifulSoup(s4.text, 'html.parser')
         highlight=soup4.find_all('span',class_='ScopusTermHighlight')
+        if not highlight:
+            highlight=soup4.find_all('span',class_='bg-primary')
         #解析名字缩写
+        if not highlight:
+            return None, None
         a=highlight[0].text.split(',')
         a.reverse()
         suoxie=' '.join([i.strip() for i in a])
         #print("缩写："+suoxie)
-        emailnotparse=highlight[0].parent.parent.find('a',class_='correspondenceEmail')
+        # 节点变动
+        node=highlight[0].parent.parent.parent
+        emailnotparse=node.find('a',class_='correspondenceEmail')
+        if emailnotparse:
+            if node.find_all('li'):
+                raise Exception('邮箱节点出错')
         return emailnotparse,suoxie
 
 
