@@ -4,6 +4,7 @@ from Mode import wenxian_mode
 from Mode import zuozhe_mode
 from utils import *
 
+
 class Main:
     def init_print(self, count=5):
         print()
@@ -14,7 +15,7 @@ class Main:
             # 形如'hong, weirong'姓在前，不带逗号的姓在后
             xing, ming = seperatename(input("人名: ").split(','))
             obj_spider = zuozhe_mode.ZuozheMode(xing, ming)
-            result=obj_spider.craw()
+            result = obj_spider.craw()
             if not result:
                 print("找不到人")
             else:
@@ -25,7 +26,7 @@ class Main:
             if wenxian == 'exit':
                 exit()
             obj_spider = wenxian_mode.Wenxian_mode(wenxian)
-            results=obj_spider.craw()
+            results = obj_spider.craw()
             print(wenxian)
             if not results:
                 print("找不到文献")
@@ -37,29 +38,30 @@ class Main:
             print('*************************')
             print('读取spider.txt...')
             # 通过读取分行写好需要爬的文献名，循环爬取审稿人信息，输出文档。
-            with open('spider.txt', 'r',encoding='utf-8') as f_in:# 不加encoding会出现UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position
+            with open('spider.txt', 'r',
+                      encoding='utf-8') as f_in:  # 不加encoding会出现UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position
                 # 传入文件对象
                 obj_spider = wenjian_mode.Wenjian_mode(f_in)
                 obj_spider.craw()
         elif flag == str(4):
 
             # authors = wenjian_mode2()
-            filename=input('输入形如A-17-00000或者纯编号的文件名:')
-            if re.match(r'\d+',filename):
-                filename='A-17-'+filename
-            message=input('输入需要过滤的字段，以分号分割:')
+            filename = input('输入形如A-17-00000或者纯编号的文件名:')
+            if re.match(r'\d+', filename):
+                filename = 'A-17-' + filename
+            message = input('输入需要过滤的字段，以分号分割:')
             print('*************************')
             print('读取spider.txt...')
             with open('spider.txt', 'r', encoding='utf-8') as f_in:
                 obj_spider = wenjian_mode.Wenjian_mode(f_in)
-                authors=obj_spider.craw()
+                authors = obj_spider.craw()
                 # 以文献数大小排序
                 authors = sorted(authors, key=lambda author: int(author["wenxin"]), reverse=True)
                 print('*************************')
                 print("\n\n\n\n排序后")
-                with open('{0}.txt'.format(filename),'w',encoding='utf-8') as out:
+                with open('{0}.txt'.format(filename), 'w', encoding='utf-8') as out:
                     for author in authors:
-                        if infilter(author,message):
+                        if infilter(author, message):
                             continue
                         print('文献数：' + author["wenxin"] + ' ' + author['lishi'])
                         print(author['AuthorName'])
@@ -69,7 +71,7 @@ class Main:
                         # print('<a href=\''+email+'\'>'+email+'></a>')
                         print('年份: ' + author['nian'] + '\n')
                         print('\n\n')
-                        writefile(out,author)
+                        writefile(out, author)
                         out.write('\n\n\n\n')
 
 
@@ -104,7 +106,7 @@ class Main:
                 print('五次错误输入，程序退出')
                 return
             print('输入不符合要求，重新输入')
-            self.init_print(count-1)
+            self.init_print(count - 1)
 
 
 if __name__ == '__main__':
