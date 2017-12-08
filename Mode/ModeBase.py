@@ -9,7 +9,7 @@ class ModeBase(object):
 
     def crawel(self, ses, AuthorID, bianhao=0):
         s2 = ses.get('https://www.scopus.com/authid/detail.uri', params={'authorId': AuthorID})  # 获取作者详细信息页面
-        message = self.parser.GetAuthorMessage(s2)  # 获取详细信息
+        message = self.parser.GetAuthorMessage(s2,AuthorID)  # 获取详细信息
         if not message:
             return None
         wenxin = message[0]

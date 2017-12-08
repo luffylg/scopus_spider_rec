@@ -37,7 +37,16 @@ def parser(title,method):
         # st=re.findall(pattern1,title)[0]
         # title=title.replace(st,'')
         return c
-    operator = {'1':parser1,'2':parser2,'3':parser3,'4':parser4}
+    def parser5(title):
+        # ***“name”***
+        pattern1=re.compile(r'.+\s"')
+        pattern2=re.compile(r'".+')
+        a=re.sub(pattern1,'',title,1)
+        c=re.sub(pattern2,'',a,1)
+        # st=re.findall(pattern1,title)[0]
+        # title=title.replace(st,'')
+        return c
+    operator = {'1':parser1,'2':parser2,'3':parser3,'4':parser4,'5':parser5}
     hh=operator.get(method)(title)
 
 
@@ -66,4 +75,4 @@ def do(parse):
 # print(a)
 # parser(a,2)
 if __name__ == '__main__':
-    do('2')
+    do('4')

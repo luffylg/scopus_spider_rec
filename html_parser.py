@@ -39,7 +39,7 @@ class HtmlParser():
             i = input('输入选择的编号：').strip()
             return Getid(span[int(i) - 1])
 
-    def GetAuthorMessage(self, s2):
+    def GetAuthorMessage(self, s2, AuthorID):
         # fout = open('output2.html', 'w',encoding="UTF-8")
         # fout.write(s2.text)
         # soup2 = BeautifulSoup(s2.text, 'html.parser')
@@ -49,14 +49,33 @@ class HtmlParser():
         if not namesec:
             return None
         span2 = namesec[0].find_all('div', class_='authAffilcityCounty')
-        namejihe = namesec[0].h1.text.replace(namesec[0].h1.span.text, '').replace('\n', '').split(',')
+        try:
+            namejihe = namesec[0].h1.text.replace(namesec[0].h1.span.text, '').replace('\n', '').split(',')
+        except:
+            namejihe = namesec[0].h2.text.replace('\n', '').split(',')
+
         name = namejihe[-1].strip() + ' ' + namejihe[0]
-        WenxinNum = soup2.find('a', id='docCntLnk').text.strip()
+        try:
+            WenxinNum = soup2.find('a', id='docCntLnk').text.strip()
+        except:
+            WenxinNum = soup2.find('a', id='docLi').text.strip()
+            WenxinNum = re.sub("\D","",WenxinNum)
         area = str(span2[0].text).replace('\n', ' ').strip()
-
-        lishi = soup2.find('div', class_='hisPubyear').text.replace('\n', '').strip()
-
-        ArticlesLink = soup2.find_all('div', class_='authorResultsOptionalLinks')[0].a['href']
+        try:
+            lishi = soup2.find('div', class_='hisPubyear').text.replace('\n', '').strip()
+        except:
+            try:
+                lishis = soup2.find('div', id='authHistory').text.split("\n")
+                for items in lishis:
+                    if items != '':
+                        lishi = items.strip()
+                        break
+            except:
+                lishi = 'unknown'
+        try:
+            ArticlesLink = soup2.find_all('div', class_='authorResultsOptionalLinks')[0].a['href']
+        except:
+            ArticlesLink = 'https://www.scopus.com/author/document/retrieval.uri?authorId={0}&tabSelected=docLi&sortType=plf-f'.format(AuthorID)
         return WenxinNum, name, area, ArticlesLink, lishi
 
     def GetArticles(self, s3):
@@ -82,12 +101,14 @@ class HtmlParser():
         # fout3.write(s4.text)
         # soup4=BeautifulSoup(open('output3.html','r',encoding="UTF-8"), 'html.parser',from_encoding="UTF-8")
         soup4 = BeautifulSoup(s4.text, 'html.parser')
-        highlight = soup4.find_all('span', class_='ScopusTermHighlight')
+        sec = soup4.find_all('section', id='authorlist')[0]
+        highlight = sec.find_all('span', class_='ScopusTermHighlight')
         if not highlight:
             highlight = soup4.find_all('span', class_='bg-primary')
         # 解析名字缩写
         if not highlight:
             return None, None
+        exa=[s.extract() for s in highlight[0]('sup')]
         a = highlight[0].text.split(',')
         a.reverse()
         suoxie = ' '.join([i.strip() for i in a])
