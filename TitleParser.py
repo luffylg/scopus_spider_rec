@@ -75,4 +75,4 @@ def do(parse):
 # print(a)
 # parser(a,2)
 if __name__ == '__main__':
-    do('4')
+    do('1')

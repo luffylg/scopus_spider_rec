@@ -61,10 +61,13 @@ def writefile(out, result):
 
 
 def infilter(author, message):
+    message=message+';serbia;Malaysia;Algeria;iran;india'
     if not message:
         return False
     filte = re.compile(r';|；').split(message)
     for s in filte:
+        if not s:
+            continue
         if s.lower().strip() in author['area'].lower():
             return True
     return False

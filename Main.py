@@ -46,9 +46,9 @@ class Main:
         elif flag == str(4):
 
             # authors = wenjian_mode2()
-            filename = input('输入形如A-17-00000或者纯编号的文件名:')
+            filename = input('输入形如A-18-00000或者纯编号的文件名:')
             if re.match(r'\d+', filename):
-                filename = 'A-17-' + filename
+                filename = 'A-18-' + filename
             message = input('输入需要过滤的字段，以分号分割:')
             print('*************************')
             print('读取spider.txt...')
@@ -79,9 +79,9 @@ class Main:
             wenxian = input('文献模糊标题或关键字：').strip()
             if wenxian == 'exit':
                 exit()
-            filename = input('输入形如A-17-00000或者纯编号的文件名:')
+            filename = input('输入形如A-18-00000或者纯编号的文件名:')
             if re.match(r'\d+', filename):
-                filename = 'A-17-' + filename
+                filename = 'A-18-' + filename
             message = input('输入需要过滤的字段，以分号分割:')
             obj_spider = keyword_mode.Keyword_mode(wenxian)
             authors = obj_spider.craw()
